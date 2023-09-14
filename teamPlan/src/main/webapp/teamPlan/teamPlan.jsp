@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ProPlan-TeamPlan</title>
+<title>ProPlan-TeamPlan Page</title>
 </head>
 <body>
 
