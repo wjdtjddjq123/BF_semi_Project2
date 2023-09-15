@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\projects\miniprojects\BF_semi_Project2\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3112336351.index
+1726828207.index
+757824452.index
+218780307.index
+2466861285.index
+3010099218.index

@@ -1,0 +1,5 @@
+INDEX VERSION 1.134
+C:\projects\miniprojects\BF_semi_Project2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\416257140.index
+\busanMini2\src\main\java
+C:\projects\miniprojects\BF_semi_Project2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\392273432.index
+\busanMini2\src\main\java
