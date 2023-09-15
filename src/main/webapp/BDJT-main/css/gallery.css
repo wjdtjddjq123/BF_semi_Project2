@@ -1,0 +1,123 @@
+:root {
+  /* App Colors */
+  --color-primary: var(--color-lightgray);
+  --color-primary-variant: var(--color-black);
+  --color-accent: var(--color-blue);
+  --color-accent-variant: var(--color-gray);
+  --color-text: var(--color-navy);
+  
+  /* Colors */
+  --color-blue: rgb(116, 151, 190);
+  --color-navy: rgb(37, 69, 103);
+  --color-gray: rgb(208, 208, 226);
+  --color-lightgray: rgb(228, 229, 234);
+  --color-black: rgb(14, 21, 27);
+  --color-white: white;
+  --color-whitegray: rgb(235, 236, 243);
+
+  /* Size */
+  --size-max-width: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+img {
+  width: 200px;
+  margin: 10px;
+  /* height 삭제 */
+  object-fit: cover;
+}
+
+/* Common */
+.section{
+  text-align: center;
+}
+
+.max-container {
+  max-width: var(--size-max-width);
+  margin: auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+/* 프로젝트 게시판 */
+.gallery__all {
+  background-color: var(--color-white);
+  grid-row: span 3;
+  padding: 0rem 1rem 2rem 1rem;
+    /* 임시 */
+  /* box-shadow: 0 3px 10px rgb(0,0,0,0.2); */
+}
+
+.gallery__title {
+  color: var(--color-text);
+  padding: 1.3rem 0rem 0.7rem 0rem;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.gallery__design {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0.7rem 0.7rem;
+  border-radius: 8px;
+  padding: 1.3rem;
+  overflow: hidden;
+  background-color: var(--color-white);
+  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);
+    /* 내용이 없을 때의 높이 지정 */
+    min-height: 1000px; /* 원하는 높이 값으로 변경 */
+}
+
+.gallery__image-container {
+  width: 50%; /* 두 칼럼으로 배치되도록 설정 */
+  padding: 1rem; /* 이미지와 텍스트 간격을 주기 위한 패딩 */
+  box-sizing: border-box; /* 패딩이 요소 크기에 포함되도록 설정 */
+}
+
+.gallery__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.gallery__text {
+  margin-top: 1rem;
+  font-size: 14px;
+  color: #333;
+  text-align: center; /* 텍스트를 가운데 정렬 */
+}
+
+.empty-gallery-message {
+  font-size: 2rem;
+  color: var(--color-accent-variant);
+  font-weight: bold;
+  text-align: center; /* 텍스트를 가운데 정렬 */
+  margin: auto;
+}
+
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+

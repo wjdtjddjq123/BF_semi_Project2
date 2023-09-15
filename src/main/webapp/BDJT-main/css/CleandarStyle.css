@@ -1,0 +1,140 @@
+  .year-month {
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .calendar_nav {
+    display: flex;
+    border-radius: 5px;
+  }
+  .calendar{
+    width: 85%;
+    margin-left: 7.5%;
+  }
+  .calendar_nav-btn {
+    width: 30%;
+    height: 30px;
+    border: none;
+    font-size: 20px;
+    line-height: 34px;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .calendar_nav-btn go-prev, calendar_nav-btn go-next{
+    border: 1px solid black;
+  }
+  .go-today {
+    width: 40%;
+  }
+
+  .days {
+    display: flex;
+    margin: 25px 0 10px;
+  }
+  
+  .day {
+    width: calc(100% / 7);
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .dates {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    height: 500px;
+    border-top: 0.5px solid gray;
+    border-left: 0.5px solid gray;
+  }
+  
+  .date {
+    width: calc(100% / 7);
+    padding: 15px;
+    text-align: right;
+    border-bottom: 0.5px solid gray;
+    border-right: 0.5px solid gray;
+    text-align: center;
+  }
+  .day:nth-child(7n),
+  .date:nth-child(7n) {
+  color: #D13E3E;
+}
+.day:nth-child(7n+6),
+  .date:nth-child(7n+6) {
+  color: rgb(116, 151, 190);;
+}
+.memo{
+  margin-top: 30px;
+  margin-left: 7.5%;
+  width: 40%;
+  display: inline-block;
+
+}
+.memo-date{
+  width: 100%;
+  float: left;
+}
+.memo-input{
+  width: 100%;
+  height: 185px;
+  box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+  border-radius: 10px;
+  border: none;
+}
+.memo-icon{
+  padding-top: 30px;
+  font-size: 20px;
+  color: rgb(37, 69, 103);
+  cursor: pointer;
+}
+.date.today {
+  background-color: rgba(169, 169, 169, 0.2);
+}
+.memo-button{
+  margin-left: 70%;
+  display: flex;
+  gap: 3%;
+
+}
+.memo-save, .memo-clear{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 80px;
+  height: 30px;
+  border-radius: 25px;
+  background-color: rgb(116, 151, 190);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+memo-save::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+memo-save {
+  background: none;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 1em auto;
+  padding: 2em 6em;
+  position: relative;
+  text-transform: uppercase;
+}
+.memo-save:hover, .memo-clear:hover{
+  background-color: rgb(37, 69, 103);
+  transition-duration: 0.1s;
+}
+
+.meno-file-section{
+  margin-top: 300px;
+  margin-left: 7%;
+}
